@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#391305"
+    tools:context=".Pembayaran">
+
+    <View
+        android:id="@+id/detail_bg"
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:background="@drawable/input_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ig_laki1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sepatu_laki_1"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintTop_toTopOf="@id/detail_bg"/>
+
+    <View
+        android:id="@+id/nama_bg"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/ig_laki1"/>
+
+    <TextView
+        android:id="@+id/txt_laki_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="monospace"
+        android:text="Qeustar\nPutih Navy"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/nama_bg"
+        app:layout_constraintTop_toTopOf="@id/nama_bg"
+        app:layout_constraintBottom_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/txtharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:fontFamily="monospace"
+        android:text="Rp150.000"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/nama_bg"
+        app:layout_constraintTop_toTopOf="@id/nama_bg"
+        app:layout_constraintBottom_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/ukuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="SIZE"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/size1"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="38"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintStart_toStartOf="@id/ukuran"
+        app:layout_constraintEnd_toEndOf="@id/size2"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/size2"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="39"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintStart_toStartOf="@id/size1"
+        app:layout_constraintEnd_toEndOf="@id/size3"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/size3"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:text="40"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintStart_toStartOf="@id/size2"
+        app:layout_constraintEnd_toEndOf="@id/size4"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/size4"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="41"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintStart_toStartOf="@id/size3"
+        app:layout_constraintEnd_toEndOf="@id/nama_bg"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"/>
+
+    <View
+        android:id="@+id/deskripsi_bg"
+        android:layout_width="330dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/ukuran" />
+
+    <TextView
+        android:id="@+id/deskripsi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:text="Deskripsi"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/deskripsi_bg"
+        app:layout_constraintTop_toTopOf="@id/deskripsi_bg"/>
+
+    <TextView
+        android:id="@+id/deskripsi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:text="Bahan yang digunkan kain kulit\nsintetis dan kain mesh berpori\n(lembut, nyaman, dan tidak panas)"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/deskripsi_bg"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi1"/>
+
+    <TextView
+        android:id="@+id/deskripsi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:text="38 : 24.7 cm\n39 : 25.3 cm\n40 : 26.0 cm\n41 : 26.7 cm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/deskripsi_bg"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi2"/>
+
+    <TextView
+        android:id="@+id/txt_kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="90dp"
+        android:drawableLeft="@drawable/ic_baseline_indeterminate_check_box_24"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"/>
+
+    <TextView
+        android:id="@+id/txt_angka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/txt_kurang"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi_bg"
+        app:layout_constraintEnd_toEndOf="@id/txt_tambah"/>
+
+    <TextView
+        android:id="@+id/txt_tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_add_box_24"
+        app:layout_constraintStart_toStartOf="@id/txt_angka"
+        app:layout_constraintTop_toBottomOf="@id/deskripsi_bg"/>
+
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_bg"
+        android:text="Tambahkan Ke Keranjang"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_kurang"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

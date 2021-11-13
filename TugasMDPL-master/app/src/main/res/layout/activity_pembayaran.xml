@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#391305"
+    tools:context=".Pembayaran">
+
+    <View
+        android:id="@+id/detail_bg"
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:background="@drawable/input_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ig_laki1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/sepatu_laki_1"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintTop_toTopOf="@id/detail_bg"/>
+
+    <View
+        android:id="@+id/nama_bg"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/ig_laki1"/>
+
+    <TextView
+        android:id="@+id/txt_detail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="Detail Pemesanan"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/nama_bg"
+        app:layout_constraintTop_toTopOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/txt_detail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Qeustar Putih Navy\nSize 40\n1 Pasang"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/nama_bg"
+        app:layout_constraintTop_toBottomOf="@id/txt_detail1"/>
+
+    <TextView
+        android:id="@+id/txt_detail3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Metode Pembayaran"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/nama_bg"
+        app:layout_constraintTop_toBottomOf="@id/txt_detail2"/>
+
+    <TextView
+        android:id="@+id/txt_detail4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Menggunakan OVO"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/nama_bg"
+        app:layout_constraintTop_toBottomOf="@id/txt_detail3"/>
+
+    <TextView
+        android:id="@+id/txt_detail5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="monospace"
+        android:text="Total"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/btn_bayar"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"/>
+
+    <TextView
+        android:id="@+id/txt_detail6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="monospace"
+        android:text="Rp150.000"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/nama_bg"
+        app:layout_constraintEnd_toEndOf="@id/btn_bayar"/>
+
+    <Button
+        android:id="@+id/btn_bayar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@drawable/btn_bg"
+        android:text="Bayar Dengan OVO"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/txt_detail5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

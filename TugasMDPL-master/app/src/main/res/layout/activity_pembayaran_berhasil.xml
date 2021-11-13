@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#391305"
+    tools:context=".PembayaranBerhasil">
+
+    <View
+        android:id="@+id/detail_bg"
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:background="@drawable/input_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/OVO"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="84dp"
+        android:text="OVO"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toTopOf="@id/detail_bg" />
+
+    <TextView
+        android:id="@+id/PembayaranBerhasil"
+        android:layout_width="203dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="76dp"
+        android:text="Terimakasih\nPembayaran telah Berhasil"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toTopOf="@id/OVO" />
+
+    <View
+        android:id="@+id/total"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/PembayaranBerhasil"/>
+
+    <TextView
+        android:id="@+id/txt_laki_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="monospace"
+        android:text="Total Bayar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/total"
+        app:layout_constraintBottom_toBottomOf="@id/total"/>
+
+    <TextView
+        android:id="@+id/txtharga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:fontFamily="monospace"
+        android:text="Rp150.000"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/total"
+        app:layout_constraintBottom_toBottomOf="@id/total"/>
+
+    <TextView
+        android:id="@+id/Dari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Dari"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/total"/>
+
+    <TextView
+        android:id="@+id/DariNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="The Ocean Store\nOVO 08123123123"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/Dari"/>
+
+    <TextView
+        android:id="@+id/Penerima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Penerima"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/DariNama"/>
+
+    <TextView
+        android:id="@+id/PenerimaNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Shofi \nOVO 089513810406"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/Penerima"/>
+
+    <View
+        android:id="@+id/DetailTransaksi"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/menu_bg"
+        app:layout_constraintEnd_toEndOf="@id/detail_bg"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="@id/detail_bg"
+        app:layout_constraintTop_toBottomOf="@id/PenerimaNama" />
+
+    <TextView
+        android:id="@+id/Transaksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="Detail Transaksi"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/DetailTransaksi"
+        app:layout_constraintTop_toTopOf="@id/DetailTransaksi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
